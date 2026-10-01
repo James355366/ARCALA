@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rodemae Arcala</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="logo">Rodemae Arcala</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#projects">My Projects</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#contact">Contacts</a></li>
+  </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <div class="hero-text">
+    <span class="hero-eyebrow">Portfolio</span>
+    <h1>Hi, I'm<em>Rodemae Arcala</em></h1>
+    <p>Learning, growing, and coding — one project at a time. Welcome to my corner of the web.</p>
+    <a href="#projects" class="hero-cta">View my work <i class="fas fa-arrow-right"></i></a>
+  </div>
+
+  <div class="hero-image">
+    <div class="hero-ring">
+      <img src="pic.jpg" alt="Rodemae Arcala" class="hero-photo">
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <p class="section-label">What I've built</p>
+  <h2 class="section-title">My Projects</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <img src="embedded.jpg" class="project-thumb" alt="Embedded System"
+           onclick="openModal('embedded.jpg','Embedded System robot project using Arduino.')">
+      <div class="project-info">
+        <h3>Embedded System</h3>
+        <p>Building a robot using Arduino and sensors — hardware meets code.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="contemp.jpg" class="project-thumb" alt="Ethics"
+           onclick="openModal('contemp.jpg','Ethics project about IT cases.')">
+      <div class="project-info">
+        <h3>Ethics</h3>
+        <p>A study of ethical issues and responsibilities in information technology.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="mul.jpg" class="project-thumb" alt="Multimedia"
+           onclick="openModal('mul.jpg','Activity to edit pictures in Adobe Photoshop.')">
+      <div class="project-info">
+        <h3>Multimedia</h3>
+        <p>Photo editing and digital media work done in Adobe Photoshop.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="pe.jpg" class="project-thumb" alt="Physical Education"
+           onclick="openModal('pe.jpg','Physical Education project.')">
+      <div class="project-info">
+        <h3>Physical Education</h3>
+        <p>Activity documentation and performance output for PE subject.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <video src="entrepvid.mp4" class="project-thumb" controls></video>
+      <div class="project-info">
+        <h3>Entrepreneurship</h3>
+        <p>Business presentation video about entrepreneurship and innovation.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="projectModal" class="modal" role="dialog" aria-modal="true">
+  <div class="modal-inner">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+    <div id="modalContent"></div>
+    <p class="modal-caption" id="modalDescription"></p>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <p class="section-label">Who I am</p>
+  <h2 class="section-title">About Me</h2>
+  <div class="about-grid">
+    <img src="pic.jpg" alt="Rodemae Arcala" class="about-photo">
+    <div class="about-body">
+      <p>
+        I'm Rodemae Arcala — a third-year college student learning and growing step by step
+        while deepening my knowledge in programming and technology.
+      </p>
+      <p>
+        I enjoy turning ideas into real projects, from building embedded systems to
+        exploring multimedia design. Every subject is a new skill to add to my toolkit.
+      </p>
+      <span class="about-badge"><i class="fas fa-graduation-cap"></i> Third Year College Student</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact-section">
+  <p class="section-label light">Reach out</p>
+  <h2 class="section-title light">Contact Me</h2>
+  <div class="contact-grid">
+
+    <div class="contact-card">
+      <i class="fab fa-facebook"></i>
+      <h3>Facebook</h3>
+      <p>Rodemae Arcala</p>
+    </div>
+
+    <div class="contact-card">
+      <i class="fab fa-whatsapp"></i>
+      <h3>WhatsApp</h3>
+      <p>+63 9668668276</p>
+    </div>
+
+    <div class="contact-card">
+      <i class="fas fa-phone"></i>
+      <h3>Phone</h3>
+      <p>+63 9668668276</p>
+    </div>
+
+    <div class="contact-card">
+      <i class="fas fa-envelope"></i>
+      <h3>Email</h3>
+      <p>RodemaeArcala@gmail.com</p>
+    </div>
+
+    <div class="contact-card">
+      <i class="fab fa-instagram"></i>
+      <h3>Instagram</h3>
+      <p>@myatiieee</p>
+    </div>
+
+    <div class="contact-card">
+      <i class="fab fa-tiktok"></i>
+      <h3>TikTok</h3>
+      <p>@ur_demyangg</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>© 2024 Rodemae Arcala — All rights reserved</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
